@@ -1,0 +1,587 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&family=Sofia&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: 'rubik', sans-serif;
+    background: black;
+    color: #fff;
+    line-height: 1.7;
+    overflow-x: hidden;
+
+}
+
+.a1 {
+    color: #fff;
+    text-decoration: none;
+}
+
+.a1:hover {
+    color: #ccc;
+}
+
+.ul1 {
+    list-style-type: none;
+
+}
+
+.link {
+    display: flex;
+    gap: 40px;
+}
+
+.link1 {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+
+}
+
+.lin {
+    color: white;
+    text-decoration: none;
+    opacity: 0.6;
+    font-size: 14px;
+
+}
+
+.lin:hover {
+    opacity: 0.4;
+}
+
+.link1:hover {
+    opacity: 0.6;
+}
+
+.bottomline {
+    border-bottom: 7px solid white;
+    margin-bottom: -20px;
+}
+
+.text_xm {
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 70px;
+}
+
+
+
+
+
+
+
+img {
+    width: 100%;
+}
+
+/* category */
+.category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 90px 40px;
+    justify-content: center;
+    text-align: center;
+
+
+}
+
+.cover {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 40px;
+    gap: 20px;
+    
+    
+}
+@media only screen and (max-width: 902px){
+    .cover {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+@media only screen and (max-width: 609px){
+    .cover {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 40px;
+    }
+}
+
+.category .cover>div {
+    height: 400px;
+    width: 300px;
+    position: relative;
+}
+
+.category .cover_grad {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(156.82deg,
+            rgba (0, 0, 0, 0.6) 4.58% rgba (0, 0, 0, 0) 69.61%),
+
+        linear-gradient (24.5deg, rgba(0, 0, 0, 0.2) 4.71%, rgba(0, 0, 0, 0)71.49%);
+}
+
+.category .cover_text {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-align: left;
+}
+
+.category .cover_1 {
+    background: url('tv.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: fixed;
+}
+
+.category .cover_2 {
+    background: url('movie.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: fixed;
+}
+
+.category .cover_3 {
+    background: url('hulu.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: fixed;
+}
+
+.category .cover_4 {
+    background: url('premium.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: fixed;
+}
+
+.h1 {
+    color: #00ed82;
+    font-size: 100%;
+    font-weight: bold;
+
+}
+
+.h2 {
+    color: #00ed82;
+    font-size: 100%;
+    font-weight: bold;
+
+}
+
+.h3 {
+    color: #00ed82;
+    font-size: 100%;
+
+    margin-top: 3%;
+
+}
+
+.sub_text_wrap {
+    max-width: 52%;
+    text-align: center;
+    margin-bottom: 16px;
+}
+.paragraph {
+    
+    font-size: 20px;
+}
+
+.sub_text_wrap h3 {
+    font-weight: lighter;
+}
+
+.text_xl {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 743px) {
+    .text_xl {
+        font-size: 38px;
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: 551px) {
+    .text_xl {
+        font-size: 7vw;
+        white-space: nowrap;
+    }
+}
+
+.sub_text {
+    width: 870px;
+    font-size: 20px;
+}
+
+
+
+.btn {
+    display: inline-block;
+    background: #00ed82;
+    color: black;
+    min-width: 40%;
+    padding: 17px 20px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 6px;
+    line-height: 14px;
+    border: none;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transform: uppercase;
+}
+
+.btn_cta:hover {
+    opacity: 0.5;
+}
+
+.legal_text1 {
+    font-size: 12px;
+    color: #ccc;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.legal_text2 {
+    font-size: 9px;
+    color: #ccc;
+    margin-top: 15px;
+    text-align: center;
+    line-break: twice;
+}
+
+.legal_text3 {
+    font-size: 11px;
+    color: #ccc;
+    margin-top: 30px;
+
+}
+
+
+.tooltip {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-weight: 10px;
+    padding: 6px 6px;
+    font-size: 12px;
+    border-radius: 4px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 230px;
+    right: 39%;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+/* header */
+.header {
+    height: 670px;
+    background-image: url(background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header::after {
+    content: '';
+    position: absolutee;
+    top: 0;
+    left: o;
+    width: 100%;
+    height: 180px;
+    z-index: 1;
+    background: linear-gradient(180deg,
+            rgba(0, 0, 0, 0.76) 15.54%,
+            rgba(0, 0, 0, 0.192) 60.23%,
+            rgba(0, 0, 0, 8e-5) 100%);
+}
+
+
+.nav1 {
+    display: flex;
+    justify-content: flex-end;
+    z-index: 2;
+    position: relative;
+    margin-right: 4%;
+
+}
+
+.logo {
+
+    margin-top: 1%;
+}
+
+.hulu {
+    transform: translate(60%, 80%);
+    width: 5%;
+
+}
+
+.login_btn {
+    background: none;
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transform: uppercase;
+    text-decoration: none;
+    opacity: 0.5;
+
+
+}
+
+.login_btn1:hover {
+    background: rgb(56, 56, 77);
+    color: white;
+    padding: 12px 12px;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 6px;
+    letter-spacing: 1px;
+    opacity: 6;
+    transform: uppercase;
+
+}
+
+.header .header_content {
+    text-align: center;
+    padding: 0 5px;
+
+}
+
+.header .header_text_1 {
+    margin-bottom: 4px;
+}
+
+.header .header_text_2 {
+    display: none;
+}
+
+
+
+
+.live_border {
+    padding: 30px 10px;
+}
+
+
+
+.header .header_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.header .header_text_1 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 15px 0;
+    width: 40%;
+    text-align: center;
+}
+
+/* live */
+.live {
+
+    padding: 40px;
+}
+
+.live_border {
+
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.live .a1 {
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+/* live sports */
+.live_sport {
+    background: url('live-sports.jpg') no-repeat center center / cover;
+    height: 800px;
+    position: relative;
+    padding-top: 150px;
+    padding-left: 150px;
+    
+}
+@media screen and (max-width: 1023px) {
+    .live_sport {
+        padding-left: 0;
+        background-position: left;
+    }
+}
+
+.live_sport_content {
+    max-width: 500px;
+    
+}
+@media screen and (max-width: 1023px) {
+    .live_sport_content {
+        margin: 80px auto 0 auto;
+    }
+}
+
+.live_sport_logo {
+    width: 300px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.live_sport_logo>div {
+    background: url('network-logo-bg.png')no-repeat center center / cover;
+    height: 55px;
+    width: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.live_sport_logo img {
+    width: 40px;
+}
+
+
+
+
+
+/* footer */
+.footer {
+    background-color: #fff;
+    color: black;
+    opacity: 0.8;
+    text-decoration: none;
+
+}
+
+.footer1 {
+    margin-top: 37px;
+
+}
+
+
+.footer_container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 60px;
+}
+
+ul {
+    list-style-type: none;
+
+}
+
+.footer_list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_list .list_head {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.social-icon {
+    display: flex;
+    gap: 20px;
+    font-size: 40px;
+    width: 40%;
+
+}
+
+.header .header_content {
+    text-align: center;
+    padding: 0 5px;
+
+}
+
+.header .header_text_1 {
+    margin-bottom: 4px;
+}
+
+.header .header_text_2 {
+    display: none;
+}
+
+
+
+.live_border {
+    padding: 30px 10px;
+}
+
+
+/* media query */
+@media (min-width: 200px) {
+    .hulu {
+        width: 70px;
+        margin-left: -15px;
+    }
+
+    .ul1 {
+        margin-top: -5px;
+    }
+
+    .logo {
+        width: 50vw;
+        margin-top: 20px;
+    }
+
+    .header_text_1 {
+        display: flex;
+        justify-content: center;
+        line-height: 1.5;
+    }
+
+    .btn {
+
+        margin-top: 20px;
+
+    }
+}
